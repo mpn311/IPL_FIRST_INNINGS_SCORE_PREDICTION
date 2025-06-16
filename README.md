@@ -1,52 +1,82 @@
-# IPL_First_Innings_Score_Prediction
-This project predicts IPL first innings scores using Linear,Random forest and Polynomial Regression models. The dataset covers IPL matches from 2008 to 2023, and the models are used to predict scores for the 2024 season. Polynomial Regression (degree 2) was selected for its strong generalization performance.
+# 🏏 IPL First Innings Score Prediction
 
-# Project Overview
-The goal is to predict the first innings total score in an IPL match using features such as runs, wickets, and overs. The project experimented with multiple regression techniques, with Polynomial Regression (degree 2) being the most successful model in terms of generalization. Random Forest was also tested but showed signs of overfitting.
+This project predicts **first innings scores** in IPL matches using various regression models including **Linear Regression**, **Random Forest**, and **Polynomial Regression**. The dataset spans matches from **2008 to 2023**, with manually added data from **IPL 2024** for prediction.  
+✅ **Polynomial Regression (Degree 2)** was selected as the final model due to its strong generalization ability.
 
-# Dataset
-- The dataset used is sourced from Kaggle: IPL Ball-by-Ball Dataset (2008-2023)
-- Some manually added data from 2024 IPL to prediction of unseen data. 
+---
 
-# Key features include:
+## 📌 Project Overview
 
-- Match ID,
-- Year
-- Batting and Bowling Teams
-- Overs
--  Balls
-- Total Runs
-- Wickets
-- Run Rate
-- Runs/Wickets in Last 5 Overs
+The goal of this project is to **predict the total score in the first innings** of an IPL match based on current match features like runs, wickets, and overs.
 
-# Models Used
-We tested the following models:
+- Multiple regression models were tested.
+- Polynomial Regression (degree 2) emerged as the best performer.
+- Random Forest showed overfitting on training data.
+- Lasso and Ridge were explored but not selected.
 
-- Linear Regression
-- Polynomial Regression (degree 2)
-- Random Forest: Though it performed well on the training data, it overfitted, leading to poor generalization on unseen data.
-- Lasso and Ridge Regression (Explored but not chosen)
+---
 
-- Final Model: Polynomial Regression (degree 2)
-Polynomial Regression (degree 2) was chosen as the final model because it performed better on unseen data, with a good balance between training and validation errors.
+## 📊 Dataset
 
+- 📂 **Source**: [Kaggle - IPL Ball-by-Ball Dataset (2008-2023)](https://www.kaggle.com/)
+- 🗂️ **Additional Data**: Manually added 2024 match data for score prediction
 
+### 🔑 Key Features
 
-- Example Predictions:
+- Match ID  
+- Year  
+- Batting Team  
+- Bowling Team  
+- Overs  
+- Balls  
+- Total Runs  
+- Wickets  
+- Run Rate  
+- Last 5 Overs: Runs & Wickets  
 
-Actual Runs	   :147
+---
 
-Predicted Runs : 142
+## 🧠 Models Used
 
-# Visualizations
-Key visualizations include:
+We experimented with several regression models:
 
-- Correlation Heatmap: Displays feature relationships.
-- Run Distribution: Shows IPL team performance over the years.
-- Model Error Plots: Visualizing the training and validation errors across folds for different models.
+- 🔹 **Linear Regression**
+- 🔹 **Polynomial Regression (Degree 2)** ✅ *(Final Model)*
+- 🔹 **Random Forest** – good training accuracy but poor generalization
+- 🔹 **Lasso & Ridge Regression** – explored but not selected due to lower performance
 
+### ✅ Final Model: Polynomial Regression (Degree 2)
 
-# Future Work
--  In the future, We can improve the accuracy of the model used in this project. Factors like toss and pitch can be considered for the prediction.
-- To improve further, we could explore advanced models like Gradient Boosting or Neural Networks. Also, better feature engineering or the use of more complex ensembling methods could reduce overfitting in the Random Forest model.
+- Better generalization on unseen data  
+- Balanced training vs validation errors
+
+#### 🔍 Example Prediction:
+
+|            | Value     |
+|------------|-----------|
+| Actual     | 147 Runs  |
+| Predicted  | 142 Runs  |
+
+---
+
+## 📈 Visualizations
+
+Key visual analysis includes:
+
+- 📊 **Correlation Heatmap** – Understand feature relationships  
+- 📉 **Run Distribution** – Explore team-wise performance trends  
+- 🧪 **Model Error Plots** – Visualize training vs validation errors across folds
+
+---
+
+## 🔭 Future Work
+
+- Include additional factors like **toss decision**, **venue**, and **pitch report**
+- Experiment with **Gradient Boosting**, **XGBoost**, or **Neural Networks**
+- Improve **feature engineering** and use **ensemble methods** to reduce overfitting in Random Forest
+
+---
+
+## 🏁 Outcome
+
+This project demonstrates how statistical modeling and feature analysis can be used to forecast first innings totals in T20 cricket, providing valuable insights for teams, analysts, and sports enthusiasts.
