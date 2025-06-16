@@ -50,17 +50,7 @@ We experimented with several regression models:
 - Better generalization on unseen data  
 - Balanced training vs validation errors
 
-#### 🔍 Example Prediction:
-
-|            | Value     |
-|------------|-----------|
-| Actual     | 147 Runs  |
-| Predicted  | 142 Runs  |
-
----
-
 ## 📈 Visualizations
-
 Key visual analysis includes:
 
 - 📊 **Correlation Heatmap** – Understand feature relationships  
